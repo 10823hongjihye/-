@@ -41,6 +41,7 @@ body {
 .modal {
 	display: none;
 }
+/*없애면 앞으로 나오게 됨*/
 
 .modal .modal_inner {
 	position: fixed;
