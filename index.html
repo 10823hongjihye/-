@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>강원천문대</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<!-- 레이어 팝업 영역 -->
+	<div class="modal">
+		<div class="modal_inner">
+			<p class="tit">
+				강원천문대와 함께하는 문화가 있는 날
+			</p>
+			<ul class="txt">
+				<li>매월 마지막주 수요일!!!</li>
+				<li>15:30~16:30 태양관측
+				<li>
+				<li>16:30~17:30 가상별자리 여행</li>
+			</ul>
+			<p class="txt">태양관측은 날씨가 좋지 않아 관측이 안될 경우 <br> 천문학 기초강의로 변경됩니다.</p>
+			<input type="button" class="btn close-modal" value="X닫기">
+		</div>
+	</div>
+
+
+	<div class="modal-back"></div>
+
+	<div class="wrap">
+		<!-- 헤더 영역 -->
+		<header class="clearfix">
+			<!-- 로고 영역 -->
+			<h1>
+				<a href="#">
+					<img src="images/logo1.png" alt="강원천문대">
+				</a>
+			</h1>
+			<!-- 메뉴 영역 -->
+			<nav>
+				<ul class="gnb clearfix">
+					<li><a href="#">강원천문대</a>
+						<ul class="sub">
+							<li><a href="#">천문대소개</a></li>
+							<li><a href="#">인사말</a></li>
+							<li><a href="#">오시는길</a></li>
+						</ul>
+					</li>
+					<li><a href="#">이용안내</a>
+						<ul class="sub">
+							<li><a href="#">프로그램</a></li>
+							<li><a href="#">관람시간표</a></li>
+							<li><a href="#">이달의별자리</a></li>
+						</ul>
+					</li>
+					<li><a href="#">천문대예약</a>
+						<ul class="sub">
+							<li><a href="#">예약하기</a></li>
+							<li><a href="#">예약확인</a></li>
+							<li><a href="#">예약취소</a></li>
+						</ul>
+					</li>
+					<li><a href="#">커뮤니티</a>
+						<ul class="sub">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">방문후기</a></li>
+							<li><a href="#">자유게시판</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- 슬라이드 이미지 영역 -->
+		<ul class="slide">
+			<li><a href="#"><img src="images/s1.jpg" alt="별과 함께 가족과 함께"></a></li>
+			<li><a href="#"><img src="images/s2.jpg" alt="연예인과 함께하는 별하늘 콘서트"></a></li>
+			<li><a href="#"><img src="images/s3.jpg" alt="강원 천문대 방문객 이벤트"></a></li>
+		</ul>
+
+		<!-- 콘텐츠 영역 -->
+		<div class="contents clearfix">
+
+			<!-- 공지사항/갤러리 탭 영역 -->
+			<section class="notice_gal">
+				<!-- 공지사항 영역 -->
+				<h3 class="on btn-notice"><a href="#">공지사항</a></h3>
+				<ul class="notice on">
+					<li class="open-modal"><a href="#">2019년 8월 문화가 있는 날 안내<span class="day">2019-08-01</span></a></li>
+					<li><a href="#">온라인 예매 시 안내사항<span class="day">2019-09-31</span></a></li>
+					<li><a href="#">2018년 12월 예매 및 휴관일 안내<span class="day">2018-11-20</span></a></li>
+					<li><a href="#">스마트폰 예매시 주의사항 안내<span class="day">2018-10-05</span></a></li>
+					<li><a href="#">결재 관련 설치 프로그램 지원<span class="day">2018-06-02</span></a></li>
+				</ul>
+				<!-- 갤러리 영역 -->
+				<h3 class="gal_txt btn-gal"><a href="#">갤러리</a></h3>
+				<ul class="gal">
+					<li><a href="#"><img src="images/g1.png" alt="별자리찾기"></a></li>
+					<li><a href="#"><img src="images/g2.png" alt="별이야기"></a></li>
+					<li><a href="#"><img src="images/g3.png" alt="5월별밤"></a></li>
+				</ul>
+			</section>
+			<!-- 배너 영역 -->
+			<section class="banner">
+				<h3>배너존</h3>
+				<a href="#">
+					<img src="images/b1.jpg" alt="배너">
+				</a>
+			</section>
+			<!-- 바로가기 영역	 -->
+			<section class="baro">
+				<h3>바로가기</h3>
+				<ul>
+					<li><a href="#">방문객센터</a></li>
+					<li><a href="#">새소식</a></li>
+					<li><a href="#">오시는길</a></li>
+				</ul>
+			</section>
+		</div>
+
+		<!-- 푸터 영역	 -->
+		<footer class="clearfix">
+			<h1>
+				<a href="#"><img src="images/logo2.png" alt="강원천문대"></a>
+			</h1>
+			<ul class="f_menu">
+				<li><a href="#">법적고지</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+			</ul>
+			<ul class="copy">
+				<li>대표자 : 김철수</li>
+				<li>사업자등록번호 : 605-82-05242</li>
+				<li>전화번호 : (033) 709-0700</li>
+				<li>Copyrightⓒ2019 by Gangwon Observatory. All rights reserved.</li>
+			</ul>
+		</footer>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+		crossorigin="anonymous"></script>
+	<script src="script/script.js"></script>
+
+</body>
+
+</html>
