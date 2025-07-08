@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>급식실 본인인증 시스템</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 네비게이션 메뉴 -->
+  <nav class="navbar">
+    <button onclick="showScreen('qr')"> QR코드 확인</button>
+    <button onclick="showScreen('menu')">오늘의 급식</button>
+    <button onclick="showScreen('order')">급식 순서</button>
+  </nav>
+
+  <!-- 본문 영역 -->
+  <main>
+    <!-- QR 인증 화면 -->
+    <section id="qr" class="screen">
+      <h2>📷 QR코드를 스캔해주세요</h2>
+      <button onclick="scanQR('3201')">[시뮬레이션] 3학년</button>
+      <button onclick="scanQR('2201')">[시뮬레이션] 2학년</button>
+      <button onclick="scanQR('1201')">[시뮬레이션] 1학년</button>
+
+      <div id="resultArea" class="hidden result-card">
+        <img id="photo" src="" alt="학생 사진" />
+        <div>
+          <h3 id="name"></h3>
+          <p id="info"></p>
+          <p id="message" class="status-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 급식 메뉴 화면 -->
+    <section id="menu" class="screen hidden">
+      <h2>🍱 오늘의 급식</h2>
+      <ul class="menu-list">
+        <li>🍚 밥: 흑미밥</li>
+        <li>🥣 국: 미역국</li>
+        <li>🍗 반찬: 닭강정, 도라지무침, 배추김치</li>
+        <li>🍎 디저트: 사과</li>
+      </ul>
+    </section>
+
+    <!-- 급식 순서 화면 -->
+    <section id="order" class="screen hidden">
+      <h2>🔢 오늘의 급식 순서</h2>
+      <ol class="order-list">
+        <li><strong>3학년</strong> - 11:50</li>
+        <li><strong>2학년</strong> - 12:10</li>
+        <li><strong>1학년</strong> - 12:30</li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
